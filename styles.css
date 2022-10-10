@@ -22,13 +22,19 @@ html {
   background-color: #fff;
 }
 
+.wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 1600px;
+  height: 100vh;
+}
+
 .navbar {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  width: 300px;
-  min-width: 250px;
-  height: 100%;
+  flex: 1 1 25%;
+
+  padding: 20px;
 }
 
 .navbar__header {
@@ -45,7 +51,7 @@ html {
   text-align: left;
 }
 
-.navbar__points {
+.navbar__items {
   width: 100%;
   margin: 0;
   padding: 10px 30px;
@@ -58,13 +64,20 @@ html {
   text-align: left;
 }
 
-***
+.navbar__item {
+
+}
+
+.nav-link {
+
+}
 
 .content {
+  overflow: auto;
+
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  flex: 1 1 75%;
 
-  margin-left: 300px;
   padding: 20px;
 }
