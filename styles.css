@@ -82,5 +82,114 @@ html {
   flex-direction: column;
   flex: 1 1 75%;
 
-  padding: 20px;
+  padding: 1.5rem;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.main-section__header {
+  width: 100%;
+  margin: 0 0 1.5rem;
+  padding: 0;
+
+  color: #fff;
+  font-family: Inter, Arial, 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.main-section__paragraph {
+  width: 100%;
+  margin: 0 0 1rem;
+  padding: 0;
+
+  color: #fff;
+  font-family: Inter, Arial, 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.main-section__paragraph:last-child {
+  margin-bottom: 2.5rem;
+}
+
+.main-section__link {
+  color: #8cb4ff;
+  font-family: Inter, Arial, 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-decoration: underline;
+}
+
+.main-section__link:active {
+  color: #fff;
+}
+
+.main-section__list {
+  width: 100%;
+  margin: 0 0 1rem;
+}
+
+.main-section__list-item {
+  color: #fff;
+  font-family: Inter, Arial, 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.main-section__preformatted {
+  width: 100%;
+  margin: 0 0 1rem;
+  padding: 0;
+
+  color: #fff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+
+  background-color: #2a2a2a;
+  border-radius: .25rem;
+}
+
+.main-section__inline-code {
+  padding: .125rem .25rem;
+
+  color: #fff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+
+  background-color: #2a2a2a;
+  border-radius: .25rem;
+}
+
+.main-section__link .main-section__inline-code {
+  color: #8cb4ff;
+}
+
+.main-section__subtitle {
+  width: 100%;
+  margin: 0 0 1rem;
+  padding: 0;
+
+  color: #fff;
+  font-family: Inter, Arial, 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.5;
 }
