@@ -80,26 +80,26 @@
       <section class="main-section" id="Flexible_layout_before_responsive_design">
         <header class="main-section__header">Flexible layout before responsive design</header>
         <p class="main-section__paragraph">
-          A number of approaches were developed to try to solve the downsides of the liquid or fixed-width methods of building websites. In 2004 Cameron Adams wrote a post entitled <a class="main-section__link" href="https://www.themaninblue.com/writing/perspective/2004/09/21/">Resolution dependent layout</a>, describing a method of creating a design that could adapt to different screen resolutions. This approach required JavaScript to detect the screen resolution and load the correct CSS.
+          A number of approaches were developed to try to solve the downsides of the liquid or fixed-width methods of building websites. In 2004 Cameron Adams wrote a post entitled <a class="main-section__link" href="https://www.themaninblue.com/writing/perspective/2004/09/21/" target="_blank">Resolution dependent layout</a>, describing a method of creating a design that could adapt to different screen resolutions. This approach required JavaScript to detect the screen resolution and load the correct CSS.
         </p>
         <p class="main-section__paragraph">
-          Zoe Mickley Gillenwater was instrumental in <a class="main-section__link" href="https://zomigi.com/blog/voices-that-matter-slides-available/">her work</a> to describe and formalize the different ways in which flexible sites could be created, attempting to find a happy medium between filling the screen or being completely fixed in size.
+          Zoe Mickley Gillenwater was instrumental in <a class="main-section__link" href="https://zomigi.com/blog/voices-that-matter-slides-available/" target="_blank">her work</a> to describe and formalize the different ways in which flexible sites could be created, attempting to find a happy medium between filling the screen or being completely fixed in size.
         </p>
       </section>
       <section class="main-section" id="Responsive_design">
         <header class="main-section__header">Responsive design</header>
         <p class="main-section__paragraph">
-          The term responsive design was <a class="main-section__link" href="https://alistapart.com/article/responsive-web-design/">coined by Ethan Marcotte in 2010</a> and described the use of three techniques in combination.
+          The term responsive design was <a class="main-section__link" href="https://alistapart.com/article/responsive-web-design/" target="_blank">coined by Ethan Marcotte in 2010</a> and described the use of three techniques in combination.
         </p>
         <ol class="main-section__list">
           <li class="main-section__list-item">
-            The first was the idea of fluid grids, something which was already being explored by Gillenwater, and can be read up on in Marcotte's article, <a class="main-section__link" href="https://alistapart.com/article/fluidgrids/">Fluid Grids</a> (published in 2009 on A List Apart).
+            The first was the idea of fluid grids, something which was already being explored by Gillenwater, and can be read up on in Marcotte's article, <a class="main-section__link" href="https://alistapart.com/article/fluidgrids/" target="_blank">Fluid Grids</a> (published in 2009 on A List Apart).
           </li>
           <li class="main-section__list-item">
-            The second technique was the idea of <a class="main-section__link" href="https://unstoppablerobotninja.com/entry/fluid-images/">fluid images</a>. Using a very simple technique of setting the <code class="main-section__inline-code">max-width</code> property to <code class="main-section__inline-code">100%</code>, images would scale down smaller if their containing column became narrower than the image's intrinsic size, but never grow larger. This enables an image to scale down to fit in a flexibly-sized column, rather than overflow it, but not grow larger and become pixelated if the column becomes wider than the image.
+            The second technique was the idea of <a class="main-section__link" href="https://unstoppablerobotninja.com/entry/fluid-images/" target="_blank">fluid images</a>. Using a very simple technique of setting the <code class="main-section__inline-code">max-width</code> property to <code class="main-section__inline-code">100%</code>, images would scale down smaller if their containing column became narrower than the image's intrinsic size, but never grow larger. This enables an image to scale down to fit in a flexibly-sized column, rather than overflow it, but not grow larger and become pixelated if the column becomes wider than the image.
           </li>
           <li class="main-section__list-item">
-            The third key component was the <a class="main-section__link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries">media query</a>. Media Queries enable the type of layout switch that Cameron Adams had previously explored using JavaScript, using only CSS. Rather than having one layout for all screen sizes, the layout could be changed. Sidebars could be repositioned for the smaller screen, or alternate navigation could be displayed.
+            The third key component was the <a class="main-section__link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries" target="_blank">media query</a>. Media Queries enable the type of layout switch that Cameron Adams had previously explored using JavaScript, using only CSS. Rather than having one layout for all screen sizes, the layout could be changed. Sidebars could be repositioned for the smaller screen, or alternate navigation could be displayed.
           </li>
         </ol>
         <p class="main-section__paragraph">
@@ -129,7 +129,7 @@
           A common approach when using Media Queries is to create a simple single-column layout for narrow-screen devices (e.g. mobile phones), then check for larger screens and implement a multiple-column layout when you know that you have enough screen width to handle it. This is often described as <span class="important">mobile first</span> design.
         </p>
         <p class="main-section__paragraph">
-          Find out more in the MDN documentation for <a class="main-section__link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries">Media Queries</a>.
+          Find out more in the MDN documentation for <a class="main-section__link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries" target="_blank">Media Queries</a>.
         </p>
       </section>
       <section class="main-section" id="Flexible_grids">
@@ -141,7 +141,7 @@
           By using a flexible grid, you only need to add in a breakpoint and change the design at the point where the content starts to look bad. For example, if the line lengths become unreadably long as the screen size increases, or a box becomes squashed with two words on each line as it narrows.
         </p>
         <p class="main-section__paragraph">
-          In the early days of responsive design, our only option for performing layout was to use <a class="main-section__link" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Floats">floats</a>. Flexible floated layouts were achieved by giving each element a percentage width, and ensuring that across the layout the totals were not more than 100%. In his original piece on fluid grids, Marcotte detailed a formula for taking a layout designed using pixels and converting it into percentages.
+          In the early days of responsive design, our only option for performing layout was to use <a class="main-section__link" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Floats" target="_blank">floats</a>. Flexible floated layouts were achieved by giving each element a percentage width, and ensuring that across the layout the totals were not more than 100%. In his original piece on fluid grids, Marcotte detailed a formula for taking a layout designed using pixels and converting it into percentages.
         </p>
         <pre class="main-section__preformatted">
           <code>
@@ -157,13 +157,13 @@
             }</code>
         </pre>
         <p class="main-section__paragraph">
-          This approach will be found in many places across the web today, and it is documented here in the layout section of our <a class="main-section__link" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Legacy_Layout_Methods">Legacy layout methods</a> article. It is likely that you will come across websites using this approach in your work, so it is worth understanding it, even though you would not build a modern site using a float-based flexible grid.
+          This approach will be found in many places across the web today, and it is documented here in the layout section of our <a class="main-section__link" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Legacy_Layout_Methods" target="_blank">Legacy layout methods</a> article. It is likely that you will come across websites using this approach in your work, so it is worth understanding it, even though you would not build a modern site using a float-based flexible grid.
         </p>
       </section>
       <section class="main-section" id="Modern_layout_technologies">
         <header class="main-section__header">Modern layout technologies</header>
         <p class="main-section__paragraph">
-          Modern layout methods such as <a class="main-section__link" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Multiple-column_Layout">Multiple-column layout</a>, <a class="main-section__link" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox">Flexbox</a>, and <a class="main-section__link" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids">Grid</a> are responsive by default. They all assume that you are trying to create a flexible grid and give you easier ways to do so.
+          Modern layout methods such as <a class="main-section__link" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Multiple-column_Layout" target="_blank">Multiple-column layout</a>, <a class="main-section__link" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox" target="_blank">Flexbox</a>, and <a class="main-section__link" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids" target="_blank">Grid</a> are responsive by default. They all assume that you are trying to create a flexible grid and give you easier ways to do so.
         </p>
         <p class="main-section__subtitle">Multicol</p>
         <p class="main-section__paragraph">
@@ -189,7 +189,7 @@
           In Flexbox, flex items will shrink and distribute space between the items according to the space in their container, as their initial behavior. By changing the values for <code class="main-section__inline-code">flex-grow</code> and <code class="main-section__inline-code">flex-shrink</code> you can indicate how you want the items to behave when they encounter more or less space around them.
         </p>
         <p class="main-section__paragraph">
-          In the example below the flex items will each take an equal amount of space in the flex container, using the shorthand of <code class="main-section__inline-code">flex: 1</code> as described in the layout topic <a class="main-section__link" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox#flexible_sizing_of_flex_items">Flexbox: Flexible sizing of flex items</a>.
+          In the example below the flex items will each take an equal amount of space in the flex container, using the shorthand of <code class="main-section__inline-code">flex: 1</code> as described in the layout topic <a class="main-section__link" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox#flexible_sizing_of_flex_items" target="_blank">Flexbox: Flexible sizing of flex items</a>.
         </p>
         <pre class="main-section__preformatted">
           <code>
@@ -203,7 +203,7 @@
         </pre>
         <p class="main-section__subtitle">CSS grid</p>
         <p class="main-section__paragraph">
-          In CSS Grid Layout the <code class="main-section__inline-code">fr</code> unit allows the distribution of available space across grid tracks. The next example creates a grid container with three tracks sized at <code class="main-section__inline-code">1fr</code>. This will create three column tracks, each taking one part of the available space in the container. You can find out more about this approach to create a grid in the Learn Layout Grids topic, under <a class="main-section__link" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids#flexible_grids_with_the_fr_unit">Flexible grids with the fr unit</a>.
+          In CSS Grid Layout the <code class="main-section__inline-code">fr</code> unit allows the distribution of available space across grid tracks. The next example creates a grid container with three tracks sized at <code class="main-section__inline-code">1fr</code>. This will create three column tracks, each taking one part of the available space in the container. You can find out more about this approach to create a grid in the Learn Layout Grids topic, under <a class="main-section__link" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids#flexible_grids_with_the_fr_unit" target="_blank">Flexible grids with the fr unit</a>.
         </p>
         <pre class="main-section__preformatted">
           <code>
@@ -228,13 +228,13 @@
           There are obvious downsides to this approach. The image might be displayed a lot smaller than its intrinsic size, which is a waste of bandwidth — a mobile user may be downloading an image several times the size of what they actually see in the browser window. In addition, you may not want the same image aspect ratio on mobile as on desktop. For example, it might be nice to have a square image for mobile, but show the same scene as a landscape image on desktop. Or, acknowledging the smaller size of an image on mobile you might want to show a different image altogether, one which is more easily understood at a small screen size. These things can't be achieved by scaling down an image.
         </p>
         <p class="main-section__paragraph">
-          Responsive Images, using the <a class="main-section__link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture"><code class="main-section__inline-code">&lt;picture&gt;</code></a> element and the <a class="main-section__link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img"><code class="main-section__inline-code">&lt;img&gt;</code></a> <code class="main-section__inline-code">srcset</code> and <code class="main-section__inline-code">sizes</code> attributes solve both of these problems. You can provide multiple sizes along with "hints" (metadata that describes the screen size and resolution the image is best suited for), and the browser will choose the most appropriate image for each device, ensuring that a user will download an image size appropriate for the device they are using.
+          Responsive Images, using the <a class="main-section__link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture" target="_blank"><code class="main-section__inline-code">&lt;picture&gt;</code></a> element and the <a class="main-section__link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" target="_blank"><code class="main-section__inline-code">&lt;img&gt;</code></a> <code class="main-section__inline-code">srcset</code> and <code class="main-section__inline-code">sizes</code> attributes solve both of these problems. You can provide multiple sizes along with "hints" (metadata that describes the screen size and resolution the image is best suited for), and the browser will choose the most appropriate image for each device, ensuring that a user will download an image size appropriate for the device they are using.
         </p>
         <p class="main-section__paragraph">
           You can also <span class="emphasized">art direct</span> images used at different sizes, thus providing a different crop or completely different image to different screen sizes.
         </p>
         <p class="main-section__paragraph">
-          You can find a detailed <a class="main-section__link" href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images">guide to Responsive Images in the Learn HTML section</a> here on MDN.
+          You can find a detailed <a class="main-section__link" href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images" target="_blank">guide to Responsive Images in the Learn HTML section</a> here on MDN.
         </p>
       </section>
       <section class="main-section" id="Responsive_typography">
@@ -278,7 +278,7 @@
           The problem with doing the above is that the user loses the ability to zoom any text set using the <code class="main-section__inline-code">vw</code> unit, as that text is always related to the size of the viewport. <span class="important">Therefore you should never set text using viewport units alone</span>.
         </p>
         <p class="main-section__paragraph">
-          There is a solution, and it involves using <a class="main-section__link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/calc"><code class="main-section__inline-code">calc()</code></a>. If you add the <code class="main-section__inline-code">vw</code> unit to a value set using a fixed size such as <code class="main-section__inline-code">em</code>s or <code class="main-section__inline-code">rem</code>s then the text will still be zoomable. Essentially, the <code class="main-section__inline-code">vw</code> unit adds on top of that zoomed value:
+          There is a solution, and it involves using <a class="main-section__link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/calc" target="_blank"><code class="main-section__inline-code">calc()</code></a>. If you add the <code class="main-section__inline-code">vw</code> unit to a value set using a fixed size such as <code class="main-section__inline-code">em</code>s or <code class="main-section__inline-code">rem</code>s then the text will still be zoomable. Essentially, the <code class="main-section__inline-code">vw</code> unit adds on top of that zoomed value:
         </p>
         <pre class="main-section__preformatted">
           <code>
@@ -293,7 +293,7 @@
       <section class="main-section" id="The_viewport_meta_tag">
         <header class="main-section__header">The viewport meta tag</header>
         <p class="main-section__paragraph">
-          If you look at the HTML source of a responsive page, you will usually see the following <a class="main-section__link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta"><code class="main-section__inline-code">&lt;meta&gt;</code></a> tag in the <code class="main-section__inline-code">&lt;head&gt;</code> of the document.
+          If you look at the HTML source of a responsive page, you will usually see the following <a class="main-section__link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta" target="_blank"><code class="main-section__inline-code">&lt;meta&gt;</code></a> tag in the <code class="main-section__inline-code">&lt;head&gt;</code> of the document.
         </p>
         <pre class="main-section__preformatted">
           <code>
@@ -350,7 +350,7 @@
       <section class="main-section" id="References">
         <header class="main-section__header">References</header>
         <p class="main-section__paragraph">
-          <a class="main-section__link" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design">Attributions and copyright licensing</a> by <a class="main-section__link" href="https://developer.mozilla.org/en-US/docs/MDN/About/contributors.txt">Mozilla Contributors</a> is licensed under <a class="main-section__link" href="https://creativecommons.org/licenses/by-sa/2.5/">CC-BY-SA 2.5</a>
+          <a class="main-section__link" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design" target="_blank">Attributions and copyright licensing</a> by <a class="main-section__link" href="https://developer.mozilla.org/en-US/docs/MDN/About/contributors.txt" target="_blank">Mozilla Contributors</a> is licensed under <a class="main-section__link" href="https://creativecommons.org/licenses/by-sa/2.5/" target="_blank">CC-BY-SA 2.5</a>
         </p>
         <p class="main-section__paragraph">
           &copy; 2022 Nikolay Tripolskiy, <a class="main-section__link" href="https://github.com/tripolych" target="_blank">GitHub</a>

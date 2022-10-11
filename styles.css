@@ -30,11 +30,14 @@ html {
 }
 
 .navbar {
+  overflow: auto;
+
   display: flex;
   flex-direction: column;
   flex: 1 1 25%;
+  padding: 2rem;
 
-  padding: 1.5rem;
+  border-right: 1px solid #343434;
 }
 
 .navbar__header {
@@ -67,12 +70,16 @@ html {
 }
 
 .nav-link {
-  color: #fff;
+  color: #8cb4ff;
   font-family: Inter, Arial, 'Helvetica Neue', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 1.25;
+  line-height: 1.5;
+}
+
+.nav-link:active {
+  color: #fff;
 }
 
 .content {
@@ -81,8 +88,7 @@ html {
   display: flex;
   flex-direction: column;
   flex: 1 1 75%;
-
-  padding: 1.5rem;
+  padding: 2rem;
 }
 
 .main-section {
@@ -118,7 +124,15 @@ html {
 }
 
 .main-section__paragraph:last-child {
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.important {
+  font-weight: 600;
+}
+
+.emphasized {
+  font-style: italic;
 }
 
 .main-section__link {
