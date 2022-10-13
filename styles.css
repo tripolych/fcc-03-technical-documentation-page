@@ -38,7 +38,7 @@ html {
 }
 
 .navbar {
-  overflow: auto; /* Need it in vertical? */
+  overflow: auto;
 
   display: flex;
   flex-direction: column;
@@ -102,7 +102,7 @@ html {
 }
 
 .content {
-  overflow: auto; /* Need it in vertical? */
+  overflow: auto;
 
   display: flex;
   flex-direction: column;
