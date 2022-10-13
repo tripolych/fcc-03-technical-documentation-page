@@ -2,11 +2,11 @@
 
 ## Description
 
-This is my freeCodeCamp Responsive Web Design project -- a Technical Documentation Page. I used MDN extensive materials on Responsive Web Design for this project.
+This is my third freeCodeCamp Responsive Web Design project -- Technical Documentation Page. For this project  I have used extensive MDN materials on Responsive Web Design.
 
-## Technologies
+## Technologies Used
 
-I have used Responsive Web Design technologies in the project such as semantic HTML and CSS, CSS Flexbox, and BEM.
+I have used semantic HTML, CSS Flexbox and mediaqueries to make the page responsive, and BEM.
 
 ## Link to the Project Page on Github Pages
 
