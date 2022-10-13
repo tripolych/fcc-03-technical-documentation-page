@@ -25,19 +25,38 @@ html {
 .wrapper {
   display: flex;
   width: 100%;
-  max-width: 1600px;
+  max-width: 1920px;
   height: 100vh;
 }
 
+@media screen and (max-width: 720px) {
+  .wrapper {
+    flex-direction: column;
+    max-width: 720px;
+
+  }
+}
+
 .navbar {
-  overflow: auto;
+  overflow: auto; /* Need it in vertical? */
 
   display: flex;
   flex-direction: column;
-  flex: 1 1 25%;
+  width: 25%;
   padding: 2rem;
 
   border-right: 1px solid #343434;
+}
+
+@media screen and (max-width: 720px) {
+  .navbar {
+    overflow: unset;
+
+    width: 100%;
+
+    border-right: none;
+    border-bottom: 1px solid #343434;
+  }
 }
 
 .navbar__header {
@@ -83,12 +102,20 @@ html {
 }
 
 .content {
-  overflow: auto;
+  overflow: auto; /* Need it in vertical? */
 
   display: flex;
   flex-direction: column;
-  flex: 1 1 75%;
+  width: 75%;
   padding: 2rem;
+}
+
+@media screen and (max-width: 720px) {
+  .content {
+    overflow: unset;
+
+    width: 100%;
+  }
 }
 
 .main-section {
@@ -173,6 +200,7 @@ html {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5;
+  white-space: pre-wrap;
 
   background-color: #2a2a2a;
   border-radius: .25rem;
